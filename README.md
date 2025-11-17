@@ -1,73 +1,135 @@
-# React + TypeScript + Vite
+# 🎸 Guitar Store – Aplicación React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Guitar Store es una aplicación web desarrollada con React + TypeScript, enfocada en la gestión de guitarras y un carrito de compras dinámico.
+El proyecto sigue buenas prácticas de arquitectura front-end, tipado estricto y un diseño modular pensado para facilitar mantenimiento, escalabilidad y trabajo colaborativo.
 
-Currently, two official plugins are available:
+# 🚀 Tecnologías utilizadas
+ 
+### React – Componentes funcionales & hooks
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### TypeScript – Tipado estricto y modelos reutilizables
 
-## React Compiler
+### TailwindCSS – Estilos modernos y responsivos
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+### Vite – Entorno de desarrollo rápido y optimizado
 
-## Expanding the ESLint configuration
+# 🎯 Características principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🛒 Carrito de compras totalmente funcional
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🎸 Gestión de guitarras con tipado centralizado
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 🧩 Componentes modulares y reutilizables
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### 🔐 Tipos globales mediante types.d.ts
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### ⚡ Performance optimizada
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### 🧼 Arquitectura limpia y orientada a buenas prácticas
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+# 📐 Arquitectura del proyecto
+src/
+ ├─ components/     → Componentes reutilizables
+ ├─ data/           → Datos de guitarras
+ ├─ hooks/          → Lógica interna reutilizable
+ ├─ types.d.ts      → Tipos globales centralizados
+ ├─ App.tsx         → Orquestación principal
+ └─ main.tsx        → Punto de entrada
+
+# ⚙️ Instalación
+git clone https://github.com/tu-usuario/tu-repo.git
+cd tu-repo
+npm install
+npm run dev
+
+# 🎯 Propósito del proyecto
+
+Este proyecto fue creado para fortalecer habilidades en:
+
+Arquitectura front-end profesional
+
+Modelado de datos en TypeScript
+
+Manejo eficiente del estado en React
+
+Componentización limpia y escalable
+
+Desarrollo con estándares modernos
+
+# 🧑‍💻 Autor
+
+Melvin Josué Alfaro Porras - Heghans
+Desarrollador Full-Stack con experiencia trabajando con empresas de Costa Rica y Estados Unidos, colaborando en equipos multidisciplinarios bajo estándares profesionales internacionales.
+
+# 📄 Licencia
+
+Proyecto disponible para fines educativos y de referencia técnica.
+
+——————————————————————————————————————
+🇺🇸 README – English Version
+# 🎸 Guitar Store – React + TypeScript Application
+
+Guitar Store is a modern web application built using React + TypeScript, designed to manage a guitar catalog and a dynamic shopping cart.
+The project follows professional front-end architecture standards, strict typing, modular design, and best practices to ensure scalability and maintainability.
+
+# 🚀 Technologies Used
+
+### React – Functional components & hooks
+
+### TypeScript – Strong typing with reusable models
+
+### TailwindCSS – Modern and responsive styling
+
+### Vite – Fast and optimized development environment
+
+# 🎯 Key Features
+
+### 🛒 Fully functional shopping cart
+
+### 🎸 Structured guitar management with centralized types
+ 
+### 🧩 Reusable and modular components
+
+### 🔐 Global TypeScript definitions via types.d.ts
+
+### ⚡ Optimized performance
+
+### 🧼 Clean and scalable architecture
+
+# 📐 Project Structure
+src/
+ ├─ components/     → Reusable UI components
+ ├─ data/           → Guitar dataset
+ ├─ hooks/          → Encapsulated logic
+ ├─ types.d.ts      → Centralized global types
+ ├─ App.tsx         → Main application container
+ └─ main.tsx        → Entry point
+
+# ⚙️ Installation
+git clone https://github.com/your-user/your-repo.git
+cd your-repo
+npm install
+npm run dev
+
+# 🎯 Project Purpose
+
+This project was created to reinforce:
+
+Professional front-end architecture
+
+Strong typing and data modeling with TypeScript
+
+Clean and efficient state management in React
+
+Reusable component patterns
+
+Modern development standards
+
+# 🧑‍💻 Author
+
+Melvin Josué Alfaro Porras - Heghans
+Full-Stack Developer with experience working with companies in Costa Rica and the United States, collaborating with multidisciplinary teams under professional development standards.
+
+# 📄 License
+
+This project is available for educational purposes and technical reference.
